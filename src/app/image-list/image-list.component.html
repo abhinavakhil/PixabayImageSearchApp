@@ -1,11 +1,29 @@
 <div class="container" style="margin-top:50px;">
-  <div style="background-color:whitesmoke;padding:50px;">
+  <!-- <div style="background-color:whitesmoke;padding:50px;">
 <input type="text" class="form-control"  [(ngModel)]="searchQuery" placeholder="Search for Images">
 <br/>
 <button class="btn btn-success btn-block" (click)="searchImages(searchQuery)" type="button">Find Images</button>
 <p class="text-center" *ngIf="searching">Fetching data...</p>
-</div>
+</div> -->
+   <!-- <div class="row justify-content-center align-items-center">
+     <div class="col-md-10 ">
+       <input type="text" class="form-control"  [(ngModel)]="searchQuery" placeholder="Search for Images" id="inputSearch">
+        </div>
+     <div class="col-md-2">
+      <button class="btn btn-success btn-block" (click)="searchImages(searchQuery)" type="button" id="inputSearchbotton">Find Images</button>
+    </div>  
+   </div> -->
 
+   
+<div class="input-group mb-3">
+    <input type="text" class="form-control"  [(ngModel)]="searchQuery" placeholder="Search for Images" id="inputSearch">
+    <div class="input-group-append">
+    <button class="btn btn-success btn-block " (click)="searchImages(searchQuery)" type="button"  id="basic-addon2">Find Images</button>
+  </div>
+  </div>
+ 
+
+   <p class="text-center" *ngIf="searching">Fetching data...</p>
 <br/>
 <div class="row">
   <ng-container *ngFor="let image of Images;let i = index">
@@ -25,3 +43,11 @@
 
    
 </div>
+
+
+<footer id="footer" *ngIf="Images.length > 1 ">
+  <!--  *ngIf="!searching && Images" -->
+<div class="container-fluid">
+  <h6 style="text-align:center">Designed and Created By Abhinav Akhil</h6>
+</div>
+</footer>

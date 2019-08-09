@@ -2,3 +2,22 @@
     margin-top:20px;
     margin-left:30px;
 }
+#inputSearch{
+    box-shadow: 1px 1px 1px 1px;
+}
+
+#basic-addon2{
+    box-shadow: 1px 1px 1px 1px;
+}
+#footer{
+    background-color: black;
+    padding:10px;
+    color:#fff;
+}
+/* @media (max-width:660px){
+    
+#inputSearchbotton{
+    margin-top:10px;
+}
+
+} */
